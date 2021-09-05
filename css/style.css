@@ -13,7 +13,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -24,11 +24,11 @@ body {
 img {
   border: 0;
   padding: 0;
-  height: auto;
+  height: 100vh;
   width: 100%;
   background-position: center;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 #clock,
@@ -40,4 +40,62 @@ img {
 #weather {
   position: relative;
   z-index: 1;
+}
+
+#clock {
+  padding: 80px;
+  font-size: 80px;
+}
+
+#login-form {
+  padding: 10px;
+}
+
+#login-form input:first-child {
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+#login-form input:last-child {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#greeting {
+  padding: 10px;
+  font-size: 30px;
+}
+
+#todo-form {
+  padding-bottom: 10px;
+}
+
+#todo-form input {
+  width: 220px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+#quote {
+  position: fixed;
+  bottom: 20px;
+}
+
+#weather {
+  position: absolute;
+  left: 0px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+#todo-list li {
+  padding: 5px;
+}
+
+#todo-list li button {
+  background: none;
+  border: none;
 }
